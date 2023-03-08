@@ -1,2 +1,2 @@
 #!/bin/bash
-echo /tmp/correction/1198566389628574635769339024577890774426_5/205/347664/0x00-shell_basics
+echo "${0}"
