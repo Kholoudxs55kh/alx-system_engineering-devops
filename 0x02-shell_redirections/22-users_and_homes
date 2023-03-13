@@ -1,2 +1,2 @@
 #!/bin/bash
-passwd -Sa | sort
+passwd -Sa cut -d ':' | sort
