@@ -1,2 +1,2 @@
 #!/bin/bash
-alias PATH="find . -type d | wc -l"
+export PATH="$PATH | find -type d | wc -l"
