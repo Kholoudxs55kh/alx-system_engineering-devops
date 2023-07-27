@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+str_to_be_displayed="Best School"
+i="0"
+max="9"
+ninth="8"
+while [ $i -lt $max ]
+do
+    echo "$str_to_be_displayed"
+#    i=$[$i+1]
+     i=$((i+1))
+    if [ $i -eq $ninth ]
+    then
+    	echo "Hi"
+    fi
+done
