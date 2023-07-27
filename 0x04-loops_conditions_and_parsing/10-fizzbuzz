@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# i always love this fizzbuzz task
+
+i="1"
+max="100"
+
+while [ $i -le $max ]
+do
+	if  (( i % 3 == 0 )) &&  (( i % 5 == 0 ))
+	    then
+	    echo "FizzBuzz"
+	elif  (( i % 3 != 0 )) &&  (( i % 5 == 0 ))
+	    then
+	    echo "Buzz"
+	elif  (( i % 3 == 0 )) &&  (( i % 5 != 0 ))
+	    then
+	    echo "Fizz"
+	else
+	    echo $i
+	fi
+	(( ++i ))
+done
