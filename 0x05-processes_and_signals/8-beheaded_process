@@ -2,5 +2,5 @@
 #	a Bash displays a list of currently running processes.
 # shellcheck disable=SC2009
 
-PID=$(pgrep -f 7-highlander)
-kill "$PID"
+PID="$(pgrep -f 7-highlander)"
+kill -9 "$PID"
