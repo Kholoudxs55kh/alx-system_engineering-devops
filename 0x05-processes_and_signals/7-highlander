@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#	a Bash displays a list of currently running processes.
+# shellcheck disable=SC2009
+
+trap "echo 'I am invincible!!!'" SIGTERM
+while :
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
