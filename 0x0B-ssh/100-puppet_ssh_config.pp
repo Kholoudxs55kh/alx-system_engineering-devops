@@ -1,8 +1,4 @@
-# using Puppet to make changes to our configuration file
-
-[main]
-strict_warnings = false
-
+# Using Puppet to make changes to our configuration file. 
 $cont = '
 # This is the ssh client system-wide configuration file.  See
 # ssh_config(5) for more information.  This file provides defaults for
@@ -54,10 +50,11 @@ IdentityFile ~/.ssh/school
 #   RekeyLimit 1G 1h
     SendEnv LANG LC_*
     HashKnownHosts yes
-    GSSAPIAuthentication yes'
+    GSSAPIAuthentication yes
+'
 
 file { 'Change-file':
-ensure  => 'file',
-path    => '/etc/ssh/ssh_config',
-content => $cont,
+  ensure  => 'file',
+  path    => '/etc/ssh/ssh_config',
+  content => $cont,
 }
