@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# ay 7aga
+
+service apache2 start
