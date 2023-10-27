@@ -2,8 +2,8 @@
 """for a given employee ID, this script returns
 information about his/her TODO list progress."""
 
-import json
 import csv
+import json
 import requests
 from sys import argv
 
